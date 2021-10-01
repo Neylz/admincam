@@ -10,7 +10,7 @@ execute store result score @s admc_z run data get entity @s Pos[2]
 execute store result score @s admc_gm run data get entity @s playerGameType
 
 #save dim
-
+function admincam:settings/dimensions.save
 
 #change gm to spec
 gamemode spectator @s
