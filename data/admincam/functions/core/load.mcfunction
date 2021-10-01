@@ -1,3 +1,4 @@
+#test
 #save of coords
 scoreboard objectives add admc_x dummy
 scoreboard objectives add admc_y dummy
