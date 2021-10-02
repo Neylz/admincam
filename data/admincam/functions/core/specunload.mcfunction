@@ -2,7 +2,7 @@
 tag @s add admc_noloop
 
 #tp back in saved dim
-function admincam:settings/dimensions.loadtp
+function admincam:settings/dimensions.reloadtp
 
 #tp player
 function admincam:core/tp/tp
