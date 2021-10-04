@@ -15,3 +15,6 @@ execute as @s[scores={admc_gm=3}] run gamemode spectator
 
 #untag player as activated
 tag @s remove admc_activated
+
+#clear actionbar
+title Neylz actionbar {"text":""}
