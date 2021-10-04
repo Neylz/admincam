@@ -20,8 +20,12 @@ execute if score specNightVision admc_settings matches 0 run tellraw @s ["",{"te
 execute if score specNightVision admc_settings matches 1 run tellraw @s ["",{"text":"\u2612","color":"#C60000","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/specnightvision.everyone"}},{"text":" Spectator Night Vision ","color":"#DCDCDD"},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Give Night Vision effect to every who is in spectator mode"}}]
 execute if score specNightVision admc_settings matches 2 run tellraw @s ["",{"text":"\u2611","color":"green","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/specnightvision.everyone"}},{"text":" Spectator Night Vision ","color":"#DCDCDD"},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Give Night Vision effect to everyone who is in spectator mode"}}]
 
+#action bar message
+execute if score actionBarWarn admc_settings matches 0 run tellraw @s ["",{"text":"\u2612","color":"#C60000","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/actionbarmessage"}},{"text":" Actionbar Message ","color":"#DCDCDD"},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Message above the action bar indicating when you are in AdminCam mode"}}]
+execute if score actionBarWarn admc_settings matches 1 run tellraw @s ["",{"text":"\u2611","color":"green","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/actionbarmessage"}},{"text":" Actionbar Message ","color":"#DCDCDD"},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Message above the action bar indicating when you are in AdminCam mode"}}]
+
 #barre du bas
-tellraw @s ["",{"text":"\n\n"},{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","underlined":true,"color":"red"}]
+tellraw @s ["",{"text":"\n"},{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","underlined":true,"color":"red"}]
 
 
 #☑☒☐❏ℹ
