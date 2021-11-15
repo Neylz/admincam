@@ -27,8 +27,11 @@ execute if score actionBarWarn admc_settings matches 1 run tellraw @s ["",{"text
 execute if score particles admc_settings matches 0 run tellraw @s ["",{"text":"\u2612","color":"#C60000","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/particles"}},{"text":" Particles "},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Particles when admin cam mode is activated/desactivated"}}]
 execute if score particles admc_settings matches 1 run tellraw @s ["",{"text":"\u2611","color":"green","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/particles"}},{"text":" Particles "},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Particles when admin cam mode is activated/desactivated"}}]
 
+#add users
+tellraw @s ["",{"text":"\n"},{"text":"\u274f","color":"blue","clickEvent":{"action":"suggest_command","value":"/tag PSEUDO add admc_op"}},{"text":" Add new user to AdminCam "},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"YOU MUST BE OP to perform this command. Change PSEUDO to the nickname of the person you want to allow to use AdminCam after clicking on \u274f.\nTo remove a member, do the same thing but replace add by remove"}}]
+
 #barre du bas
-tellraw @s ["",{"text":"\n"},{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","underlined":true,"color":"red"}]
+tellraw @s ["",{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","underlined":true,"color":"red"}]
 
 
 #☑☒☐❏ℹ
