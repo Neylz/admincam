@@ -1,6 +1,7 @@
 {
     "values": [
         "admincam:core/tick/actionbarwarn",
-        "admincam:core/tick/nightvision"
+        "admincam:core/tick/nightvision",
+        "admincam:core/tick/noopcommands"
     ]
 }

@@ -13,7 +13,7 @@ execute store result score @s admc_gm run data get entity @s playerGameType
 execute as @s run function admincam:settings/dimensions.save
 
 #particles
-execute if score particles admc_settings matches 1 run particle minecraft:reverse_portal ~ ~0.5 ~ 0 0.5 0 0.5 1000 force
+execute as @s at @s if score particles admc_settings matches 1 run particle minecraft:reverse_portal ~ ~0.5 ~ 0 0.5 0 0.5 1000 force
 
 #change gm to spec
 gamemode spectator @s
