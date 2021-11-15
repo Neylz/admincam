@@ -15,16 +15,7 @@ scoreboard objectives add admc_varTp dummy
 
 #settings
 scoreboard objectives add admc_settings dummy
-#haveChanges
-scoreboard players set haveChanges admc_settings 0
-#nightvision
-scoreboard players set specNightVision admc_settings 1
-#actionBarWarn
-scoreboard players set actionBarWarn admc_settings 1
-#disappearParticles
-scoreboard players set disappearParticles admc_settings 1
-#onlyCreativePlayers
-scoreboard players set onlyCreativePlayers admc_settings 0
+execute unless score hasBeenSetup admc_settings matches 1 run function admincam:core/changesettings/defaultsettings
 
 
 tellraw @a ["",{"text":"==============","color":"dark_gray"},{"text":"  ","color":"dark_purple"},{"text":"AdminCam","color":"dark_red","hoverEvent":{"action":"show_text","contents":["",{"text":"Datapack Made by ","color":"dark_gray"},{"text":"Neylz","color":"gray"},{"text":"\n"},{"text":"Version ","color":"dark_gray"},{"text":"0.1","color":"gray"},{"text":"\n"},{"text":"Compatibility ","color":"dark_gray"},{"text":"1.17.x","color":"gray"},{"text":"\n"},{"text":"Is currently ","color":"dark_gray"},{"text":"installed","color":"green"}]}},{"text":"  ===============","color":"dark_gray"},{"text":"\n "}]
