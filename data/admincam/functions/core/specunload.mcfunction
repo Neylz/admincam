@@ -18,3 +18,6 @@ tag @s remove admc_activated
 
 #clear actionbar
 title Neylz actionbar {"text":""}
+
+#clear night_vision
+effect clear @s minecraft:night_vision

@@ -1,0 +1,2 @@
+execute if score specNightVision admc_settings matches 1 run effect give @a[tag=admc_activated] minecraft:night_vision 12 255 true
+execute if score specNightVision admc_settings matches 2 run effect give @a[gamemode=spectator] minecraft:night_vision 12 255 true
