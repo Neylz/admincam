@@ -3,7 +3,7 @@ execute as @s[tag=admc_activated,tag=!admc_noloop] run function admincam:core/sp
 
 
 #Non-activated -> Activated
-execute as @s[tag=admc_ADMIN,tag=!admc_activated,tag=!admc_noloop] run function admincam:core/specload
+execute as @s[tag=admc_op,tag=!admc_activated,tag=!admc_noloop] run function admincam:core/specload
 
 #rm antiloop tag
 tag @s remove admc_noloop

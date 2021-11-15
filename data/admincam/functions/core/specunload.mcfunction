@@ -15,3 +15,12 @@ execute as @s[scores={admc_gm=3}] run gamemode spectator
 
 #untag player as activated
 tag @s remove admc_activated
+
+#clear actionbar
+title Neylz actionbar {"text":""}
+
+#clear night_vision
+effect clear @s minecraft:night_vision
+
+#particles
+execute as @s at @s if score particles admc_settings matches 1 run particle minecraft:portal ~ ~0.5 ~ 0.3 0.5 0.3 0 1000 force
