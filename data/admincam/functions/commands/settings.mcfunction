@@ -24,6 +24,10 @@ execute if score specNightVision admc_settings matches 2 run tellraw @s ["",{"te
 execute if score actionBarWarn admc_settings matches 0 run tellraw @s ["",{"text":"\u2612","color":"#C60000","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/actionbarmessage"}},{"text":" Actionbar Message ","color":"#DCDCDD"},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Message above the action bar indicating when you are in AdminCam mode"}}]
 execute if score actionBarWarn admc_settings matches 1 run tellraw @s ["",{"text":"\u2611","color":"green","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/actionbarmessage"}},{"text":" Actionbar Message ","color":"#DCDCDD"},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Message above the action bar indicating when you are in AdminCam mode"}}]
 
+#particles
+execute if score disappearParticles admc_settings matches 0 run tellraw @s ["",{"text":"\u2612","color":"#C60000","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/particles"}},{"text":" Particles "},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Particles when admin cam mode is activated/desactivated"}}]
+execute if score disappearParticles admc_settings matches 1 run tellraw @s ["",{"text":"\u2611","color":"green","clickEvent":{"action":"run_command","value":"/function admincam:core/changesettings/particles"}},{"text":" Particles "},{"text":"\u2139","color":"blue","hoverEvent":{"action":"show_text","contents":"Particles when admin cam mode is activated/desactivated"}}]
+
 #barre du bas
 tellraw @s ["",{"text":"\n"},{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","underlined":true,"color":"red"}]
 

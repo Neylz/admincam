@@ -21,3 +21,6 @@ title Neylz actionbar {"text":""}
 
 #clear night_vision
 effect clear @s minecraft:night_vision
+
+#particles
+execute as @s at @s if score disappearParticles admc_settings matches 1 run particle minecraft:portal ~ ~0.5 ~ 0.3 0.5 0.3 0 1000 force

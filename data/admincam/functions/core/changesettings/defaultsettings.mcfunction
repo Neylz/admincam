@@ -1,4 +1,4 @@
-#haveChanges
+#haveChanges (used as anti loop for many things)
 scoreboard players set haveChanges admc_settings 0
 
 
@@ -12,4 +12,5 @@ scoreboard players set disappearParticles admc_settings 1
 #onlyCreativePlayers
 scoreboard players set onlyCreativePlayers admc_settings 0
 
+#marked as setup
 scoreboard players set hasBeenSetup admc_settings 1
