@@ -1,6 +1,11 @@
 #antiloop tag
 tag @s add admc_noloop
 
+#particles for non-API users
+execute as @s[tag=!admc_api] at @s if score particles admc_settings matches 1 run particle minecraft:reverse_portal ~ ~0.5 ~ 0 0.5 0 0.5 1000 normal
+#particles for API users
+execute as @s[tag=admc_api_particles] run particle minecraft:reverse_portal ~ ~0.5 ~ 0 0.5 0 0.5 1000 normal
+
 #save gm | 0=Survival, 1=Creative, 2=Adventure, 3=Spectator
 execute store result score @s admc_gm run data get entity @s playerGameType
 
@@ -13,6 +18,7 @@ execute store result score @s admc_y run data get entity @s Pos[1]
 execute store result score @s admc_z run data get entity @s Pos[2]
 #save dim
 execute as @s run function admincam:settings/dimensions.save
+
 
 
 #API store coords and impose injection
@@ -35,13 +41,6 @@ execute if score isTP? admc_api_inject matches 1 run scoreboard players operatio
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_y = Y admc_api_storage
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_z = Z admc_api_storage
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_Dim = Dim admc_api_storage
-
-
-
-#particles for non-API users
-execute as @s[tag=!admc_api] if score particles admc_settings matches 1 run particle minecraft:reverse_portal ~ ~0.5 ~ 0 0.5 0 0.5 1000 normal
-#particles for API users
-execute as @s[tag=admc_api_particles] run particle minecraft:reverse_portal ~ ~0.5 ~ 0 0.5 0 0.5 1000 normal
 
 
 #tag player as activated

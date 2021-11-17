@@ -1,7 +1,6 @@
 #antiloop tag
 tag @s add admc_noloop
 
-say a 
 
 #tp back in saved dim
 function admincam:settings/dimensions.reloadtp

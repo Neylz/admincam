@@ -17,6 +17,7 @@ execute if score options_nightVision admc_api_inject matches 1 run tag @s add ad
 execute if score options_actionBar admc_api_inject matches 1 run tag @s add admc_api_actionBar
 
 # ========== LAUNCH ==========
+scoreboard players add requestsCount admc_api_info 1
 execute as @s run function admincam:core/specload
 
 
