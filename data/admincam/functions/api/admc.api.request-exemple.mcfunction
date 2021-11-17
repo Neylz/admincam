@@ -1,4 +1,6 @@
+# API request version 1
 # THIS FUNCTION MUST BE EXECUTED BY A PLAYER (or via a `/execute as @s`)
+
 # ===========================================================YOUR SCRIPTS===========================================================
 # here you can write the code that you want but it's better to code at 
 
