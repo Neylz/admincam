@@ -1,6 +1,7 @@
 #antiloop tag
 tag @s add admc_noloop
 
+
 #tp back in saved dim
 function admincam:settings/dimensions.reloadtp
 
@@ -24,3 +25,9 @@ effect clear @s minecraft:night_vision
 
 #particles
 execute as @s at @s if score particles admc_settings matches 1 run particle minecraft:portal ~ ~0.5 ~ 0.3 0.5 0.3 0 1000 force
+
+#remove tags from API
+tag @s remove admc_api
+tag @s remove admc_api_particles
+tag @s remove admc_api_nightVision
+tag @s remove admc_api_actionBar
