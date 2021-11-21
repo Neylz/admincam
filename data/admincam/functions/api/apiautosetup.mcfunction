@@ -4,7 +4,7 @@
 #API infos
 scoreboard objectives add admc_api_info dummy
 #version
-scoreboard players set APIversion admc_api_info 1
+scoreboard players set APIversion admc_api_info 2
 #count of requests (debug) (dosn't resest at reload)
 execute unless score requestsCount admc_api_info matches 0.. run scoreboard players set requestsCount admc_api_info 0
 

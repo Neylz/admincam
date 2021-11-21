@@ -34,13 +34,15 @@ execute if score isTP? admc_api_inject matches 1 run scoreboard players operatio
 #API store dimension and impose injection
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation Dim admc_api_storage = @s admc_dim
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_dim = tpDim admc_api_inject
+#API TP Dim
+execute if score isTP? admc_api_inject matches 1 run function admincam:settings/dimensions.reloadtp
 #API TP
 execute if score isTP? admc_api_inject matches 1 run function admincam:core/tp/tp
 #API restore good coords and dimension
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_x = X admc_api_storage
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_y = Y admc_api_storage
 execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_z = Z admc_api_storage
-execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_Dim = Dim admc_api_storage
+execute if score isTP? admc_api_inject matches 1 run scoreboard players operation @s admc_dim = Dim admc_api_storage
 
 
 #tag player as activated
